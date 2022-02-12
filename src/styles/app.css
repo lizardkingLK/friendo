@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+small,
+strong,
+i,
+b,
+em {
+  color: #ffffff;
+  font-family: "Didact Gothic", sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+small {
+  font-size: 0.75rem;
+}
+
+.lightText {
+  color: #ffffff;
+}
+
+.darkText {
+  color: #000000;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.app header.appHeader nav.nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.app header.appHeader nav.nav div.brandNavbar {
+  align-items: center;
+  display: flex;
+  user-select: none;
+}
+.app header.appHeader nav.nav div.brandNavbar h3.brandLogo {
+  color: #ff0000;
+  margin: 0 10px 0 0;
+}
+.app header.appHeader nav.nav ul.listNavbar {
+  align-items: center;
+  display: flex;
+  list-style: none;
+}
+.app header.appHeader nav.nav ul.listNavbar li.listNavbarItem {
+  margin: 0 10px;
+}

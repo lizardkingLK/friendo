@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $darker;
+    color: $lighter;
+    padding: $sp20;
+}
+
+.app {
+    header.appHeader {
+        nav.nav {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+
+            div.brandNavbar {
+                align-items: center;
+                display: flex;
+                user-select: none;
+
+                h3.brandLogo {
+                    color: $accent;
+                    margin: 0 $sp10 0 0;
+                }
+            }
+
+            ul.listNavbar {
+                align-items: center;
+                display: flex;
+                list-style: none;
+
+                li.listNavbarItem {
+                    margin: 0 $sp10;
+                }
+            }
+        }
+    }
+}

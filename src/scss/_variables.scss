@@ -1,0 +1,55 @@
+// var colors
+$accent: #ff0000;
+$light: #f3f3f3;
+$lighter: #ffffff;
+$dark: #333333;
+$darker: #000000;
+
+// var font-sizes
+$fs: 1rem;
+$fs-xs: $fs * .75;
+$fs-sm: $fs * 1;
+$fs-m: $fs * 1.5;
+$fs-lg: $fs * 2;
+$fs-xl: $fs * 3;
+
+// var heights
+$h10: 10vh;
+$h20: 20vh;
+$h50: 50vh;
+$h80: 80vh;
+$h90: 90vh;
+$h100: 100vh;
+
+// var widths
+$w10: 10vw;
+$w20: 20vw;
+$w30: 30vw;
+$w40: 40vw;
+$w50: 50vw;
+$w100: 100vw;
+
+// var spacings
+$sp5: 5px;
+$sp10: 10px;
+$sp20: 20px;
+$sp30: 30px;
+$sp40: 40px;
+$sp50: 50px;
+
+// var thicknesses
+$th1: 1px;
+$th2: 2px;
+$th3: 3px;
+$th4: 5px;
+$th5: 7px;
+
+// var box shadow
+$bsh: 0 $th3 $th3 $lighter;
+
+// var text shadow
+$tsh: 0 $th1 $th1 $darker;
+
+// var transitions
+$tri1: .1s;
+$tri2: .2s;

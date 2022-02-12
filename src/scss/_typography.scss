@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+small,
+strong,
+i,
+b,
+em {
+    color: $lighter;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+h1 {
+    font-size: $fs-xl;
+}
+
+h2 {
+    font-size: $fs-lg;
+}
+
+h3 {
+    font-size: $fs-m;
+}
+
+h4 {
+    font-size: $fs-sm;
+}
+
+p {
+    font-size: $fs-sm;
+}
+
+small {
+    font-size: $fs-xs;
+}
+
+.lightText {
+    color: $lighter;
+}
+
+.darkText {
+    color: $darker;
+}
