@@ -20,6 +20,16 @@ function App() {
                     </ul>
                 </nav>
             </header>
+
+            <section className='appBody'>
+                <div className="appBodyDisplay">
+                    <h1 className='appBodyDisplayTitle'>Display</h1>
+                </div>
+                <div className="appBodyControl">
+                    <h1 className='appBodyControlTitle'>Control</h1>
+
+                </div>
+            </section>
         </div>
     );
 }

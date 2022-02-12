@@ -8,7 +8,6 @@ h6,
 p,
 small,
 strong,
-i,
 b,
 em {
   color: #ffffff;
@@ -56,13 +55,13 @@ small {
 
 body {
   background-color: #000000;
-  color: #ffffff;
-  padding: 20px;
+  padding: 0 20px;
 }
 
 .app header.appHeader nav.nav {
   align-items: center;
   display: flex;
+  height: 10vh;
   justify-content: space-between;
 }
 .app header.appHeader nav.nav div.brandNavbar {
@@ -81,4 +80,46 @@ body {
 }
 .app header.appHeader nav.nav ul.listNavbar li.listNavbarItem {
   margin: 0 10px;
+}
+.app header.appHeader nav.nav ul.listNavbar li.listNavbarItem .listNavbarItemAnchorText {
+  color: #ffffff;
+}
+.app header.appHeader nav.nav ul.listNavbar li.listNavbarItem .listNavbarItemAnchorText:hover {
+  color: #ff0000;
+  transition: 0.2s;
+}
+.app section.appBody {
+  align-items: center;
+  display: flex;
+}
+.app section.appBody .appBodyDisplay {
+  background-color: darkgreen;
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+  height: 80vh;
+  justify-content: space-between;
+}
+.app section.appBody .appBodyControl {
+  background-color: darkolivegreen;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  height: 80vh;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1024px) {
+  section.appBody {
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto;
+    min-height: 80vh;
+  }
+  section.appBody .appBodyDisplay {
+    min-width: 90vw;
+  }
+  section.appBody .appBodyControl {
+    min-width: 90vw;
+  }
 }

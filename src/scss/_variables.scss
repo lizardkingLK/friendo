@@ -27,6 +27,8 @@ $w20: 20vw;
 $w30: 30vw;
 $w40: 40vw;
 $w50: 50vw;
+$w80: 80vw;
+$w90: 90vw;
 $w100: 100vw;
 
 // var spacings
@@ -51,5 +53,8 @@ $bsh: 0 $th3 $th3 $lighter;
 $tsh: 0 $th1 $th1 $darker;
 
 // var transitions
-$tri1: .1s;
-$tri2: .2s;
+$tri1: .2s;
+
+// var screen sizes
+$dispDesktop: 1024px;
+$dispMobile: 300px;

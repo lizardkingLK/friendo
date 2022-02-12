@@ -7,8 +7,7 @@
 
 body {
     background-color: $darker;
-    color: $lighter;
-    padding: $sp20;
+    padding: 0 $sp20;
 }
 
 .app {
@@ -16,6 +15,7 @@ body {
         nav.nav {
             align-items: center;
             display: flex;
+            height: $h10;
             justify-content: space-between;
 
             div.brandNavbar {
@@ -36,8 +36,60 @@ body {
 
                 li.listNavbarItem {
                     margin: 0 $sp10;
+
+                    .listNavbarItemAnchorText {
+                        color: $lighter;
+                    }
+
+                    .listNavbarItemAnchorText:hover {
+                        color: $accent;
+                        transition: $tri1;
+                    }
                 }
             }
+        }
+    }
+
+    section.appBody {
+        align-items: center;
+        display: flex;
+
+        .appBodyDisplay {
+            background-color: darkgreen;
+            display: flex;
+            flex: 2;
+            flex-direction: column;
+            height: $h80;
+            justify-content: space-between;
+        }
+
+        .appBodyControl {
+            background-color: darkolivegreen;
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            height: $h80;
+            justify-content: space-between;
+        }
+
+    }
+
+}
+
+// DESKTOP
+@media screen and (max-width: $dispDesktop) {
+    section.appBody {
+        display: flex;
+        flex-direction: column-reverse;
+        height: auto;
+        min-height: $h80;
+
+        .appBodyDisplay {
+            min-width: $w90;
+        }
+
+        .appBodyControl {
+            min-width: $w90;
         }
     }
 }
