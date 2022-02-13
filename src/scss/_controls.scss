@@ -1,0 +1,10 @@
+textarea.primaryTextarea {
+    background-color: transparent;
+    border: none;
+    color: $accent;
+    height: 100%;
+    font-size: $fs-m;
+    outline: none;
+    padding: $sp10;
+    resize: none;
+}

@@ -46,6 +46,17 @@ small {
   color: #000000;
 }
 
+textarea.primaryTextarea {
+  background-color: transparent;
+  border: none;
+  color: #ff0000;
+  height: 100%;
+  font-size: 1.5rem;
+  outline: none;
+  padding: 10px;
+  resize: none;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -93,7 +104,6 @@ body {
   display: flex;
 }
 .app section.appBody .appBodyDisplay {
-  background-color: darkgreen;
   display: flex;
   flex: 2;
   flex-direction: column;
@@ -101,7 +111,6 @@ body {
   justify-content: space-between;
 }
 .app section.appBody .appBodyControl {
-  background-color: darkolivegreen;
   display: flex;
   flex: 1;
   flex-direction: column;

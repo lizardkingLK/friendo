@@ -1,6 +1,9 @@
+import { useState } from 'react';
 import './styles/app.css';
 
 function App() {
+    const [text, setText] = useState();
+
     return (
         <div className="app">
             <header className="appHeader">
@@ -23,11 +26,12 @@ function App() {
 
             <section className='appBody'>
                 <div className="appBodyDisplay">
-                    <h1 className='appBodyDisplayTitle'>Display</h1>
+                    <h1 className='appBodyDisplayTitle'>{text}</h1>
                 </div>
                 <div className="appBodyControl">
-                    <h1 className='appBodyControlTitle'>Control</h1>
-
+                    <textarea name='controlInput' className='controlInput primaryTextarea'
+                        id='controlInput' placeholder='Enter your text...'
+                        onChange={(e) => setText(e.target.value)}></textarea>
                 </div>
             </section>
         </div>
