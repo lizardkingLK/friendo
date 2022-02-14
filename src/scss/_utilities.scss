@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $darker;
+    padding: 0 $sp20;
+}
+
+::-webkit-scrollbar {
+    background-color: $darker;
+    border-radius: $sp10;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $accent;
+    border-radius: $sp10;
+    cursor: pointer;
+}

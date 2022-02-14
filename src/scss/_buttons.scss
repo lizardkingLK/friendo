@@ -3,4 +3,11 @@ button.primaryBtn {
     border: none;
     color: $lighter;
     cursor: pointer;
+
+    &:hover {
+        h3 {
+            color: $accent;
+            transition: $tri1;
+        }
+    }
 }

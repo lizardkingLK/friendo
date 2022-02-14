@@ -1,4 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #000000;
+  padding: 0 20px;
+}
+
+::-webkit-scrollbar {
+  background-color: #000000;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ff0000;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
 h1,
 h2,
 h3,
@@ -9,7 +32,8 @@ p,
 small,
 strong,
 b,
-em {
+em,
+blockquote {
   color: #ffffff;
   font-family: "Didact Gothic", sans-serif;
 }
@@ -51,7 +75,7 @@ textarea.primaryTextarea {
   border: none;
   color: #ff0000;
   height: 100%;
-  font-size: 1.5rem;
+  font-size: 3rem;
   outline: none;
   padding: 10px;
   resize: none;
@@ -69,28 +93,9 @@ button.primaryBtn {
   color: #ffffff;
   cursor: pointer;
 }
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth;
-}
-
-body {
-  background-color: #000000;
-  padding: 0 20px;
-}
-
-::-webkit-scrollbar {
-  background-color: #000000;
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #ff0000;
-  border-radius: 10px;
-  cursor: pointer;
+button.primaryBtn:hover h3 {
+  color: #ff0000;
+  transition: 0.2s;
 }
 
 .app header.appHeader nav.nav {
@@ -127,6 +132,14 @@ body {
   align-items: center;
   display: flex;
 }
+.app section.appBody .appBodyControl {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  max-height: 80vh;
+  justify-content: center;
+  align-items: center;
+}
 .app section.appBody .appBodyDisplay {
   align-items: center;
   display: flex;
@@ -135,29 +148,50 @@ body {
   overflow-y: scroll;
   padding: 20px;
   width: 80vh;
-}
-.app section.appBody .appBodyControl {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  height: 80vh;
-  justify-content: space-between;
   word-wrap: break-word;
+}
+.app section.appAbout {
+  align-items: center;
+  background-color: #000000;
+  border-radius: 20px;
+  display: none;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  background-color: #000000;
+  z-index: 1;
+}
+.app section.appAbout button.aboutClose {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+}
+.app section.appAbout blockquote.aboutQuote {
+  margin: 20px 40px;
+  text-align: center;
 }
 
 @media screen and (max-width: 1024px) {
   section.appBody {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     height: auto;
-    min-height: 80vh;
   }
   section.appBody .appBodyDisplay {
     min-width: 90vw;
+    height: 90vh;
     padding: 0 10px;
   }
   section.appBody .appBodyControl {
+    align-items: center;
     min-width: 90vw;
+    height: 90vh;
     padding: 0 10px;
+    transform: scale(0.5);
   }
 }
