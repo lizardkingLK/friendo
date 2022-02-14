@@ -7,4 +7,12 @@ textarea.primaryTextarea {
     outline: none;
     padding: $sp10;
     resize: none;
+
+    // DESKTOP
+    @media screen and (max-width: $dispDesktop) {
+        & {
+            min-height: $h40;
+            padding: 0;
+        }
+    }
 }

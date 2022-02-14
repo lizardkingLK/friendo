@@ -56,6 +56,19 @@ textarea.primaryTextarea {
   padding: 10px;
   resize: none;
 }
+@media screen and (max-width: 1024px) {
+  textarea.primaryTextarea {
+    min-height: 40vh;
+    padding: 0;
+  }
+}
+
+button.primaryBtn {
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
 
 * {
   box-sizing: border-box;
@@ -67,6 +80,17 @@ textarea.primaryTextarea {
 body {
   background-color: #000000;
   padding: 0 20px;
+}
+
+::-webkit-scrollbar {
+  background-color: #000000;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ff0000;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 .app header.appHeader nav.nav {
@@ -104,11 +128,13 @@ body {
   display: flex;
 }
 .app section.appBody .appBodyDisplay {
+  align-items: center;
   display: flex;
-  flex: 2;
-  flex-direction: column;
   height: 80vh;
-  justify-content: space-between;
+  justify-content: center;
+  overflow-y: scroll;
+  padding: 20px;
+  width: 80vh;
 }
 .app section.appBody .appBodyControl {
   display: flex;
@@ -116,19 +142,22 @@ body {
   flex-direction: column;
   height: 80vh;
   justify-content: space-between;
+  word-wrap: break-word;
 }
 
 @media screen and (max-width: 1024px) {
   section.appBody {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     height: auto;
     min-height: 80vh;
   }
   section.appBody .appBodyDisplay {
     min-width: 90vw;
+    padding: 0 10px;
   }
   section.appBody .appBodyControl {
     min-width: 90vw;
+    padding: 0 10px;
   }
 }

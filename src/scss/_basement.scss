@@ -10,6 +10,17 @@ body {
     padding: 0 $sp20;
 }
 
+::-webkit-scrollbar {
+    background-color: $darker;
+    border-radius: $sp10;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $accent;
+    border-radius: $sp10;
+    cursor: pointer;
+}
+
 .app {
     header.appHeader {
         nav.nav {
@@ -55,21 +66,22 @@ body {
         display: flex;
 
         .appBodyDisplay {
-            // background-color: darkgreen;
+            align-items: center;
             display: flex;
-            flex: 2;
-            flex-direction: column;
             height: $h80;
-            justify-content: space-between;
+            justify-content: center;
+            overflow-y: scroll;
+            padding: $sp20;
+            width: $h80;
         }
 
         .appBodyControl {
-            // background-color: darkolivegreen;
             display: flex;
             flex: 1;
             flex-direction: column;
             height: $h80;
             justify-content: space-between;
+            word-wrap: break-word;
         }
 
     }
@@ -80,16 +92,18 @@ body {
 @media screen and (max-width: $dispDesktop) {
     section.appBody {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         height: auto;
         min-height: $h80;
 
         .appBodyDisplay {
             min-width: $w90;
+            padding: 0 $sp10;
         }
 
         .appBodyControl {
             min-width: $w90;
+            padding: 0 $sp10;
         }
     }
 }
