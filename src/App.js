@@ -27,7 +27,7 @@ function App() {
             let options = { backgroundColor: BackgroundColor };
             html2canvas(target, options)
                 .then((canvas) => {
-                    let lnk = document.createElement("a"), e;
+                    let lnk = document.createElement("a");
                     lnk.download = filename;
                     lnk.href = canvas.toDataURL(OutputFormat);
                     e = new MouseEvent("click");
