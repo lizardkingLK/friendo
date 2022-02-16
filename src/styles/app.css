@@ -22,6 +22,19 @@ body {
   cursor: pointer;
 }
 
+.largeDisplayText {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  word-wrap: break-word;
+  height: 1000px;
+  width: 1000px;
+}
+.largeDisplayText h1 {
+  font-size: 6rem;
+}
+
 h1,
 h2,
 h3,
@@ -119,6 +132,8 @@ button.primaryBtn:hover h3 {
   list-style: none;
 }
 .app header.appHeader nav.nav ul.listNavbar li.listNavbarItem {
+  cursor: pointer;
+  font-size: 1rem;
   margin: 0 10px;
 }
 .app header.appHeader nav.nav ul.listNavbar li.listNavbarItem .listNavbarItemAnchorText {
@@ -160,32 +175,34 @@ button.primaryBtn:hover h3 {
   justify-content: center;
   left: 50%;
   position: absolute;
+  text-align: center;
   top: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-  background-color: #000000;
   z-index: 1;
 }
 .app section.appAbout button.aboutClose {
   position: absolute;
-  top: 20px;
   right: 40px;
+  top: 20px;
+}
+.app section.appAbout h3.aboutCreatedBy {
+  text-align: center;
 }
 .app section.appAbout blockquote.aboutQuote {
   margin: 20px 40px;
-  text-align: center;
 }
 
 @media screen and (max-width: 1024px) {
   section.appBody {
     display: flex;
-    flex-direction: column-reverse;
-    height: auto;
+    flex-direction: column;
   }
   section.appBody .appBodyDisplay {
     min-width: 90vw;
     height: 90vh;
     padding: 0 10px;
+    transform: scale(0.5);
   }
   section.appBody .appBodyControl {
     align-items: center;

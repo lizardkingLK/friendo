@@ -23,6 +23,8 @@
                 list-style: none;
 
                 li.listNavbarItem {
+                    cursor: pointer;
+                    font-size: $fs-sm;
                     margin: 0 $sp10;
 
                     .listNavbarItemAnchorText {
@@ -34,6 +36,7 @@
                         transition: $tri1;
                     }
                 }
+
             }
         }
     }
@@ -74,21 +77,24 @@
         justify-content: center;
         left: $half;
         position: absolute;
+        text-align: center;
         top: $half;
         transform: translate(-$half, -$half);
         width: $full;
-        background-color: $darker;
         z-index: 1;
 
         button.aboutClose {
             position: absolute;
-            top: $sp20;
             right: $sp40;
+            top: $sp20;
+        }
+
+        h3.aboutCreatedBy {
+            text-align: center;
         }
 
         blockquote.aboutQuote {
             margin: $sp20 $sp40;
-            text-align: center;
         }
 
     }
@@ -99,13 +105,13 @@
 @media screen and (max-width: $dispDesktop) {
     section.appBody {
         display: flex;
-        flex-direction: column-reverse;
-        height: auto;
+        flex-direction: column;
 
         .appBodyDisplay {
             min-width: $w90;
             height: $h90;
             padding: 0 $sp10;
+            transform: scale(.5);
         }
 
         .appBodyControl {

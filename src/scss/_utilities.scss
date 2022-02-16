@@ -20,3 +20,17 @@ body {
     border-radius: $sp10;
     cursor: pointer;
 }
+
+.largeDisplayText {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: $sp30;
+    word-wrap: break-word;
+    height: $large;
+    width: $large;
+
+    h1 {
+        font-size: $fs-xxl;
+    }
+}

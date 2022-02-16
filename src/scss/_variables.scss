@@ -12,6 +12,7 @@ $fs-sm: $fs * 1;
 $fs-m: $fs * 1.5;
 $fs-lg: $fs * 2;
 $fs-xl: $fs * 3;
+$fs-xxl: $fs * 6;
 
 // var heights
 $h10: 10vh;
@@ -64,3 +65,6 @@ $dispMobile: 300px;
 $quarter: 25%;
 $half: 50%;
 $full: 100%;
+
+// var output types
+$large: 1000px;
