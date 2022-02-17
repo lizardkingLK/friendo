@@ -183,7 +183,7 @@ button.primaryBtn:hover h3 {
 }
 .app section.appAbout button.aboutClose {
   position: absolute;
-  right: 40px;
+  right: 30px;
   top: 20px;
 }
 .app section.appAbout h3.aboutCreatedBy {
