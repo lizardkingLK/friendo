@@ -1,6 +1,6 @@
 module.exports = {
     BackgroundColor: "#000000",
-    CharLimit: 152,
+    CharLimit: 2048,
     OutputFormat: "image/png;base64",
     GetId: (length) => {
         let characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
@@ -10,4 +10,11 @@ module.exports = {
         }
         return result;
     },
+    GetSize: (length) => {
+        if (length > 0 && length <= 152) {
+            return "smallDisplayText";
+        } else if (length > 152 && length <= 2048) {
+            return "largeDisplayText";
+        }
+    }
 };
