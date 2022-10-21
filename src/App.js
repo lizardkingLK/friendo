@@ -1,6 +1,6 @@
 import { useRef, useState, useEffect } from 'react';
 import html2canvas from "html2canvas";
-import { BackgroundColor, CharLimit, GetId, OutputFormat } from './utils/constants';
+import { BackgroundColor, CharLimit, GetId, GetSize, OutputFormat } from './utils/constants';
 import './styles/app.css';
 
 function App() {
@@ -25,7 +25,7 @@ function App() {
             let target = targetRef.current;
             let targetWrap = document.createElement("section");
             let targetTemp = target.cloneNode(true);
-            targetWrap.setAttribute("class", "largeDisplayText");
+            targetWrap.setAttribute("class", GetSize(text.length));
             targetWrap.append(targetTemp);
             document.body.appendChild(targetWrap);
             let filename = GetId(36);
@@ -106,8 +106,9 @@ function App() {
                         <i className="fa fa-close"></i>
                     </h3>
                 </button>
-                <h3 className="aboutCreatedBy" title='https://github.com/AMUSTechCo'>
-                    Created by Sandeep Fernando for <b>AMUS</b>&trade;</h3>
+                <h3 className="aboutCreatedBy" title='https://github.com/lizardkingLK'>
+                    Created by Sandeep Fernando
+                </h3>
                 <blockquote className='aboutQuote' cite="https://www.imdb.com/title/tt0477348/"
                     title='https://www.imdb.com/title/tt0477348/'>
                     "What's the most you ever lost on a coin toss?"
