@@ -1,36 +1,46 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
-    background-color: $darker;
-    padding: 0 $sp20;
+  background-color: $darker;
+  padding: 0 $sp20;
 }
 
 ::-webkit-scrollbar {
-    background-color: $darker;
-    border-radius: $sp10;
+  background-color: $darker;
+  border-radius: $sp10;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: $accent;
-    border-radius: $sp10;
-    cursor: pointer;
+  background-color: $accent;
+  border-radius: $sp10;
+  cursor: pointer;
+}
+
+.smallDisplayText,
+.largeDisplayText {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  word-wrap: break-word;
+
+  h1 {
+    font-size: $fs-xxl;
+  }
+}
+
+.smallDisplayText {
+  padding: $sp30;
+  height: $small;
+  width: $small;
 }
 
 .largeDisplayText {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    padding: $sp30;
-    word-wrap: break-word;
-    height: $large;
-    width: $large;
-
-    h1 {
-        font-size: $fs-xxl;
-    }
+  padding: $sp60;
+  height: $large;
+  width: $large;
 }

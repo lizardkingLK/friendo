@@ -7,7 +7,7 @@ $darker: #000000;
 
 // var font-sizes
 $fs: 1rem;
-$fs-xs: $fs * .75;
+$fs-xs: $fs * 0.75;
 $fs-sm: $fs * 1;
 $fs-m: $fs * 1.5;
 $fs-lg: $fs * 2;
@@ -40,6 +40,7 @@ $sp20: 20px;
 $sp30: 30px;
 $sp40: 40px;
 $sp50: 50px;
+$sp60: 60px;
 
 // var thicknesses
 $th1: 1px;
@@ -55,7 +56,7 @@ $bsh: 0 $th3 $th3 $lighter;
 $tsh: 0 $th1 $th1 $darker;
 
 // var transitions
-$tri1: .2s;
+$tri1: 0.2s;
 
 // var screen sizes
 $dispDesktop: 1024px;
@@ -67,4 +68,5 @@ $half: 50%;
 $full: 100%;
 
 // var output types
-$large: 1000px;
+$small: 1024px;
+$large: 4096px;
