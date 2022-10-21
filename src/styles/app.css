@@ -22,17 +22,28 @@ body {
   cursor: pointer;
 }
 
+.smallDisplayText,
 .largeDisplayText {
   align-items: center;
   display: flex;
   justify-content: center;
-  padding: 30px;
   word-wrap: break-word;
-  height: 1000px;
-  width: 1000px;
 }
+.smallDisplayText h1,
 .largeDisplayText h1 {
   font-size: 6rem;
+}
+
+.smallDisplayText {
+  padding: 30px;
+  height: 1024px;
+  width: 1024px;
+}
+
+.largeDisplayText {
+  padding: 60px;
+  height: 4096px;
+  width: 4096px;
 }
 
 h1,
